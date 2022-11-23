@@ -1,0 +1,201 @@
+.card{
+    margin-bottom: 30px;
+    word-wrap: break-word;
+    background-color: #fff;
+    background-clip: border-box;
+    border: 1 solid rgba(0,0,0,0.125);
+    border-radius: 4px;
+    box-shadow: 0px 1px 3px 0px rgba(54,74,99,0.05);
+    .card-inner{
+        .card-title-group{
+            padding: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            border-bottom: 2px solid #42b842;
+            .card-title{
+                margin: 0;
+                .title{
+                    margin: 0;
+                    color: $titleNew-text;
+                    @include head-font-size(16);
+                    font-weight: 600;
+                    line-height: 1.1;
+                }
+            }
+        }
+        .card-content{
+            padding: 20px;
+            .details-view{
+                display: block;
+                margin-bottom: 30px;
+                .left-label{
+                    color: $text-secondary-color;
+                    @include label-font-size(14);
+                    font-weight: 500;
+                }
+                .right-content{
+                    display: inline-block;
+                    color: $text-primary-color;
+                    @include label-font-size(14);
+                    font-weight: 400;
+                    word-wrap: break-word;
+                    line-height: 20px;
+                }
+            }
+            .data-list{
+                .data-item{
+                    color: #8094ae;
+                    font-size: 14px;
+                    font-weight: 400;
+                    line-height: 1.65;
+                    padding: 8px 0;
+                }
+                .data-value{
+                    color: #526484;
+                    font-size: 14px;
+                    font-weight: 500;
+                    line-height: 1.65;
+                }
+            }
+        }
+        .photo-card{
+            position: relative;
+            .avatar-upload{
+                position: absolute;
+                right: 30px;
+                top: 30px;
+            }
+            .profile-image-big{
+                position: absolute;
+                top: 10px;
+                right: 10px;
+            }
+            .profile-image-big img{
+                width: 125px;
+                height: 125px;
+                border-radius: 150px;
+            }
+        }
+    }
+}
+
+.card-banner{
+    position: relative;
+    margin-bottom: 30px;
+    padding: 20px 0;
+    background: #4229ab;
+    @include box-shadow(2px, 2px, 10px, rgba(0, 0, 0, 0.3));
+    @include border-radius(5px);
+    width: 100%;
+    overflow: hidden;
+    .left-image{
+        position: absolute;
+        left: 0;
+        top: 0;
+    }
+    .right-image{
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+    .product-details{
+        position: relative;
+        z-index: 1;
+        text-align: center;
+        .head-status{
+            position: absolute;
+            top: 0px;
+            right: 10px;
+        }
+        .profile-image{
+            .image-area{
+                display: inline-block;
+                background: #715ec0;
+                width: 70px;
+                height: 70px;
+                @include border-radius(50%);
+                @include box-shadow(2px, 2px, 20px, rgba(0, 0, 0, 0.2));
+                img{
+                    display: inline-block;
+                    background: #715ec0;
+                    width: 70px;
+                    height: 70px;
+                    @include border-radius(50%);
+                    @include box-shadow(2px, 2px, 20px, rgba(0, 0, 0, 0.2)); 
+                }
+            }
+            
+        }
+        .product-name{
+            margin-top: 10px;
+            margin-bottom: 0;
+            h3{
+                margin: 0;
+                color: #ffffff;
+                @include head-font-size(22);
+                font-weight: 500;
+            }
+        }
+    }
+   
+}
+
+
+// max-width media screen
+// 767 px
+@media screen and ($width-max : $target-width-mobileDevice) {
+    
+    .card .card-inner .card-content {
+        padding: 15px;
+    }
+
+    .card.view-card .card-content.view-card-content .details-view {
+        margin-bottom: 10px !important;
+    }
+    
+    }
+
+// min-width media screen
+// 768 px
+@media screen and ($width-min : $target-width-ipad) {
+    .card.view-card .card-content.view-card-content .details-view {
+        margin-bottom: 15px !important;
+    }
+
+    .card .card-inner .card-content .details-view {
+        display: block;
+        margin-bottom: 15px !important;
+    }
+
+}
+
+// 1024 px
+@media screen and ($width-min : $target-width-ipadLandscape) {
+    .card.view-card .card-content.view-card-content .details-view {
+        margin-bottom: 23px !important;
+    }
+
+    .card .card-inner .card-content .details-view {
+        display: block;
+        margin-bottom: 23px !important;
+    }
+    
+}
+
+// 1600 px
+@media screen and ($width-min :$target-width-desktopMIDPI) {
+	.card.view-card .card-content.view-card-content .details-view {
+        margin-bottom: 30px !important;
+    }
+
+    .card .card-inner .card-content .details-view {
+        display: block;
+        margin-bottom: 30px !important;
+    }
+}
+// 1920 px
+@media screen and ($width-min :$target-width-desktopHIDPI) {
+	
+}
+

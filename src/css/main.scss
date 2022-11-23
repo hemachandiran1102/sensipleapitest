@@ -1,0 +1,30 @@
+// helpers scss file
+@import "./helpers/variables.scss";
+@import "./helpers/mixins.scss";
+
+// base scss file
+@import "./base/typography.scss";
+@import "./base/color.scss";
+@import "./base/common.scss";
+@import "./base/icon-fonts.scss";
+
+// components scss file
+@import "./components/basic-input-new.scss";
+@import "./components/button.scss";
+@import "./components/checkBox.scss";
+@import "./components/side-bar.scss";
+@import "./components/card-design.scss";
+@import "./components/card-new.scss";
+@import "./components/card-table.scss";
+@import "./components/quasar-table-new.scss";
+@import "./components/button-new.scss";
+@import "./components/page-title-new.scss";
+@import "./components/filter-section-new.scss";
+@import "./components/id-card.scss";
+
+// layout
+@import "./layout/login.scss";
+@import "./layout/home-layout.scss";
+// media-query
+@import "./media-query/common-media-query.scss";
+@import "./components/member-details.scss";

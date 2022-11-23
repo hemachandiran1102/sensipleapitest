@@ -1,0 +1,114 @@
+*{
+    box-sizing: border-box;
+}
+html, body{ 
+    height: 100%;
+}
+// body.englishLan{
+//     font-family: $english-font;
+// }
+// body.japaneseLan{
+//     font-family: $japanese-font;
+// }
+.margin_r{
+   margin-right: 20px; 
+}
+.margin-bottom{
+    margin-bottom: 0 !important;
+}
+sup{
+    color: red;
+}
+button{
+    outline: none;
+}
+
+input[type='date'], input[type='time'], input[type='text'], input[type='number']  {
+    -webkit-appearance: none;
+}
+.text-area-input{
+    float: left;
+    width: 100%;
+    min-height: 75px;
+    outline: none;
+    resize: none;
+}
+
+.q-field--auto-height.q-field--dense.q-field--labeled .q-field__native {
+    width: calc (80%)!important;
+    overflow-x: hidden!important;
+    white-space: nowrap!important;
+    text-overflow: ellipsis!important;
+    display: block!important;
+} 
+
+    
+// 767 px
+@media screen and ($width-max : $target-width-mobileDevice) {
+.margin_r{
+    margin-right: 0px; 
+}  
+
+}
+// 640 px
+@media screen and ($width-max : $target-width-galaxyNote3Landscape) {
+
+}
+// 568 px
+@media screen and ($width-max : $target-width-iphone5Landscape) {
+
+}
+// 480 px
+@media screen and ($width-max : $target-width-iphoneLandscape) {
+
+}
+// 414 px
+@media screen and ($width-max : $target-width-iphonePlus) {
+
+}
+// 375 px
+@media screen and ($width-max : $target-width-iphone678) {
+
+}
+// 360 px
+@media screen and ($width-max : $target-width-galaxyNote3) {
+
+}
+// 320 px
+@media screen and ($width-max : $target-width-iphone) {
+
+
+}
+
+// min-width media screen
+// 768 px
+@media screen and ($width-min : $target-width-ipad) {
+
+}
+// 1024 px
+@media screen and ($width-min : $target-width-ipadLandscape) {
+    .text-area-input{
+        width: 50%!important;
+    }
+    
+}
+// 1200 px
+@media screen and ($width-min :$target-width-laptopMDPI) {
+
+}
+// 1366 px
+@media screen and ($width-min :$target-width-laptopHDX) {
+
+}
+// 1440 px
+@media screen and ($width-min :$target-width-laptopHDPI) {
+
+}
+// 1600 px
+@media screen and ($width-min :$target-width-desktopMIDPI) {
+
+}
+// 1920 px
+@media screen and ($width-min :$target-width-desktopHIDPI) {
+
+}

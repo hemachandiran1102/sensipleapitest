@@ -1,0 +1,832 @@
+
+
+/* Login page input css start ***/
+.form-field-wrapper{
+    margin-bottom: 15px;
+    .form-field-label{
+        display: inline-block;
+        padding-bottom: 4px;
+        color: black;
+        @include label-font-size(15);
+        font-weight: 500;
+        @include transition (all, 0.3s, ease);
+    }
+    .input-field{
+        width: 100%;
+        .q-field__control{
+            @include border-radius(0px);
+            height: 40px;
+            background: gainsboro;
+            &:before{
+                @include border-all(1px, solid, #c7c7c7);
+            }
+            &:after{
+                @include border-all(1px, solid, #c7c7c7);
+            }
+            .q-field__marginal{
+                font-size: 20px;
+                height: 45px;
+            }
+            
+        }
+    }
+    
+    .q-field--focused{
+        .q-field__control{
+            &:after{
+                @include border-all(1px, solid, $primary-color);
+            }
+            
+        }
+    }
+    .form-group__error{
+        display: inline-block;
+        @include label-font-size(12);
+        font-weight: 400;
+        @include transition (all, 0.3s, ease);
+    }
+}
+.form-field-wrapper.input-alert{
+    .form-field-label{
+        color: $error-message;
+    }
+    .input-field{
+        .q-field__control{
+            &:before{
+                @include border-all(1px, solid, $error-message);
+            }
+            &:after{
+                @include border-all(1px, solid, $error-message);
+            }
+            .q-field__marginal{
+                color: $error-message;
+            }
+            
+        }
+    }
+    .form-group__error{
+        color: $error-message;
+    }
+}
+
+.form-field-wrapper .input-alert{
+    .form-field-label{
+        color: $error-message;
+    }
+    .input-field{
+        .q-field__control{
+            &:before{
+                @include border-all(1px, solid, $error-message);
+            }
+            &:after{
+                @include border-all(1px, solid, $error-message);
+            }
+            .q-field__marginal{
+                color: $error-message;
+            }
+            
+        }
+    }
+    .form-group__error{
+        color: $error-message;
+    }
+}
+/* Login page input css End ***/
+
+
+
+/* inner page input css start ***/
+.form-field-wrapper-inner{
+    margin-bottom: 10px;
+    .form-field-label{
+        display: inline-block;
+        color: $input-label-text;
+        @include label-font-size(14);
+        font-weight: 500;
+    }
+    .q-checkbox__label{
+        display: inline-block;
+        color: $input-label-text;
+        @include label-font-size(14);
+        font-weight: 500;
+    }
+    .input-field{
+        width: 100%;
+        .q-field__control{
+            @include border-radius(4px);
+            min-height: 40px;
+            background: #fafafa;
+            &:before{
+                @include border-all(1px, solid, #c7c7c7);
+            }
+            &:after{
+                @include border-all(1px, solid, #c7c7c7);
+            }
+            .q-field__marginal{
+                font-size: 20px;
+                height: 40px;
+            }
+            .q-field__label{
+                color: $titleNew-text;
+                font-weight: 500;
+            }
+            
+        }
+        .q-field--auto-height, .q-field__native{
+            min-height: 0;
+        }
+    }
+    .vdatetime-input{
+        width: 100%; 
+        @include border-radius(4px);
+        min-height: 40px;
+        background: #fafafa;
+        @include border-all(1px, solid, #c7c7c7);
+        padding-left: 10px;
+    }
+    .input-field-auto{
+        width: 100%;
+        .q-field__control{
+            @include border-radius(4px);
+            background: #fafafa;
+            &:before{
+                @include border-all(1px, solid, #c7c7c7);
+            }
+            &:after{
+                @include border-all(1px, solid, #c7c7c7);
+            }
+            .q-field__marginal{
+                font-size: 20px;
+                height: 40px;
+            }
+            .q-field__label{
+                color: $titleNew-text;
+                font-weight: 500;
+            }
+            
+        }
+        .q-field--auto-height, .q-field__native{
+            min-height: 0;
+        }
+    }
+    .q-field--focused{
+        .q-field__control{
+            &:after{
+                @include border-all(1px, solid, $primary-color);
+            }
+            
+        }
+    }
+    .q-field--with-bottom{
+        padding-bottom: 0;
+    }
+    .form-group__error{
+        display: inline-block;
+        @include label-font-size(12);
+        font-weight: 400;
+        @include transition (all, 0.3s, ease);
+    }
+}
+.form-field-wrapper-inner.input-alert{
+    .form-field-label{
+        color: $error-message;
+    }
+    .input-field{
+        .q-field__control{
+            &:before{
+                @include border-all(1px, solid, $error-message);
+            }
+            &:after{
+                @include border-all(1px, solid, $error-message);
+            }
+            .q-field__marginal{
+                color: $error-message;
+            }
+            
+        }
+    }
+    .form-group__error{
+        color: $error-message;
+    }
+}
+
+.form-field-wrapper-inner .input-alert{
+    .form-field-label{
+        color: $error-message;
+    }
+    .input-field{
+        .q-field__control{
+            &:before{
+                @include border-all(1px, solid, $error-message);
+            }
+            &:after{
+                @include border-all(1px, solid, $error-message);
+            }
+            .q-field__marginal{
+                color: $error-message;
+            }
+            
+        }
+    }
+    .form-group__error{
+        color: $error-message;
+    }
+}
+/* inner page input css end ***/
+
+/* DATE PICKER CSS START ***/
+.form-field-wrapper-inner.date-picker{
+    input{
+        padding-left: 10px;
+        @include border-radius(4px);
+        min-height: 40px;
+        background: #fafafa;
+        @include border-all(1px, solid, #c7c7c7);
+    }
+}
+/* DATE PICKER CSS END ***/
+
+/* model input css start ***/
+.form-field-wrapper-model{
+    margin-bottom: 10px;
+    .form-field-label{
+        display: inline-block;
+        padding-bottom: 5px;
+        color: $input-label-text;
+        @include label-font-size(14);
+        font-weight: 500;
+        @include transition (all, 0.3s, ease);
+    }
+    .input-field{
+        width: 100%;
+        .q-field__control{
+            @include border-radius(4px);
+            min-height: 40px;
+            height: 40px;
+            background: #fafafa;
+            &:before{
+                @include border-all(1px, solid, #c7c7c7);
+            }
+            &:after{
+                @include border-all(1px, solid, #c7c7c7);
+            }
+            .q-field__marginal{
+                font-size: 20px;
+                height: 40px;
+            }
+           
+        }
+        .q-field--auto-height, .q-field__native{
+            min-height: 0;
+        }
+        
+        
+    }
+    .q-field--focused{
+        .q-field__control{
+            &:after{
+                @include border-all(1px, solid, $primary-color);
+            }
+            
+        }
+    }
+    .q-field--with-bottom{
+        padding-bottom: 0;
+    }
+
+
+    .add-email {
+        cursor: pointer;
+        text-align: right;
+        margin-top: 5px;
+        color: #67389a;
+        font-size: 13px;
+        font-weight: 600;
+    }
+    
+    .form-group__error{
+        display: inline-block;
+        @include label-font-size(12);
+        font-weight: 400;
+        @include transition (all, 0.3s, ease);
+    }
+}
+.form-field-wrapper-model.input-alert{
+    .form-field-label{
+        color: $error-message;
+    }
+    .input-field{
+        .q-field__control{
+            &:before{
+                @include border-all(1px, solid, $error-message);
+            }
+            &:after{
+                @include border-all(1px, solid, $error-message);
+            }
+            .q-field__marginal{
+                color: $error-message;
+            }
+            
+        }
+    }
+    .form-group__error{
+        color: $error-message;
+    }
+}
+/* model input css end ***/
+
+/* filter input css start ***/
+.form-field-wrapper-inner-serch{
+    margin-bottom: 10px;
+    .input-field{
+        width: 100%;
+        .q-field__control{
+            @include border-radius(4px);
+            background: #fafafa;
+            &:before{
+                @include border-all(1px, solid, #c7c7c7);
+            }
+            &:after{
+                @include border-all(1px, solid, #c7c7c7);
+            }
+            .q-field__marginal{
+                font-size: 20px;
+            }
+            
+        }
+    }
+    .q-field--focused{
+        .q-field__control{
+            &:after{
+                @include border-all(1px, solid, $primary-color);
+            }
+            
+        }
+    }
+}
+/* filter input css end ***/
+
+/* SELECTE ORG CSS START ***/
+.selected-org{
+    width: 100%;
+    padding-bottom: 20px;
+    border-bottom: 2px dotted #e5e9f2;
+    ul{
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        .preview-item{
+            margin-bottom: 5px;
+            padding: 3px 8px 3px 8px;
+            display: inline-block;
+            color: #364a63;
+            background-color: #e9ebee;
+            border:1px solid #afb7c1;
+            font-size: 12px;
+            font-weight: 500;
+            border-radius: 3px;
+            .q-btn{
+                padding: 0;
+                font-size: 8px;
+            }
+        }
+    }
+}
+.select-org{
+    margin-top: 10px;
+    .option-select{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 10px;
+        border-bottom: 2px dotted #e5e9f2;
+        .q-btn{
+            margin: 0;
+            margin-bottom: 10px;
+            color: #854fff;
+            font-size: 12px;
+            font-weight: 600;
+            cursor: pointer;
+            line-height: 10px;
+        }
+        .container {
+            display: block;
+            position: relative;
+            padding-left: 35px;
+            margin-bottom: 10px;
+            color: #854fff;
+            font-size: 12px;
+            font-weight: 600;
+            cursor: pointer;
+            line-height: 20px;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+          }
+          
+          /* Hide the browser's default checkbox */
+          .container input {
+            position: absolute;
+            opacity: 0;
+            cursor: pointer;
+            height: 0;
+            width: 0;
+          }
+          
+          /* Create a custom checkbox */
+          .checkmark {
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 20px;
+            width: 20px;
+            background-color: #eee;
+          }
+          
+          /* On mouse-over, add a grey background color */
+          .container:hover input ~ .checkmark {
+            background-color: #ccc;
+          }
+          
+          /* When the checkbox is checked, add a blue background */
+          .container input:checked ~ .checkmark {
+            background-color: #854fff;
+          }
+          
+          /* Create the checkmark/indicator (hidden when not checked) */
+          .checkmark:after {
+            content: "";
+            position: absolute;
+            display: none;
+          }
+          
+          /* Show the checkmark when checked */
+          .container input:checked ~ .checkmark:after {
+            display: block;
+          }
+          
+          /* Style the checkmark/indicator */
+          .container .checkmark:after {
+            left: 9px;
+            top: 5px;
+            width: 5px;
+            height: 10px;
+            border: solid white;
+            border-width: 0 3px 4px 0;
+            -webkit-transform: rotate(45deg);
+            -ms-transform: rotate(45deg);
+            transform: rotate(45deg);
+          }
+    }
+}
+/* SELECTE ORG CSS END ***/
+
+.serch-new-box{
+    background: #fafafa;
+    .selected-list{
+            padding: 10px;
+            min-height: 60px;
+            border-top-left-radius: 4px;
+            border-top-right-radius: 4px;
+            @include border-all(1px, solid, #c7c7c7);
+        p{
+            display: inline-block;
+            margin: 0;
+            padding-bottom: 5px;
+            color: $input-label-text;
+            @include label-font-size(14);
+            font-weight: 500;
+            @include transition (all, 0.3s, ease);
+        }
+        ul{
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            .preview-item{
+                margin-bottom: 5px;
+                padding: 3px 8px 3px 8px;
+                display: inline-block;
+                color: #364a63;
+                background-color: #e9ebee;
+                border:1px solid #afb7c1;
+                font-size: 12px;
+                font-weight: 500;
+                border-radius: 3px;
+                .q-btn{
+                    padding: 0;
+                    font-size: 8px;
+                }
+            }
+        }
+    }
+    .select-new-box{
+        border-bottom-left-radius: 4px;
+        border-bottom-right-radius: 4px;
+        @include border-all(1px, solid, #c7c7c7);
+        .option-select{
+            padding: 10px;
+            margin-bottom: 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid #c7c7c7;
+            p{
+                display: inline-block;
+                margin: 0;
+                padding-bottom: 5px;
+                color: $input-label-text;
+                @include label-font-size(14);
+                font-weight: 500;
+                @include transition (all, 0.3s, ease);
+            }
+            input{
+                @include border-radius(4px);
+                height: 30px;
+                padding-left: 10px;
+                background: #fafafa;
+                @include border-all(1px, solid, #c7c7c7);
+                &:focus{
+                    outline: none;
+                }
+            }
+        }
+    }
+}
+
+.org-select-list{
+    margin: 0;
+    padding: 0 10px 0 10px;
+    list-style: none;
+    /* The container */
+    .container {
+        display: block;
+        position: relative;
+        padding-left: 25px;
+        margin-bottom: 9px;
+        cursor: pointer;
+        color: #344357;
+        font-size: 15px;
+        font-weight: 500;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+        line-height:20px;
+    }
+    
+    /* Hide the browser's default checkbox */
+    .container input {
+        position: absolute;
+        opacity: 0;
+        cursor: pointer;
+        height: 0;
+        width: 0;
+    }
+    
+    /* Create a custom checkbox */
+    .checkmark {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 16px;
+        width: 16px;
+        border-radius: 3px;
+        border: 1px solid rgba(0,0,0,0.54);
+    }
+    
+    /* On mouse-over, add a grey background color */
+
+    
+    /* When the checkbox is checked, add a blue background */
+    .container input:checked ~ .checkmark {
+        background-color: #8e24aa;
+    }
+    
+    /* Create the checkmark/indicator (hidden when not checked) */
+    .checkmark:after {
+        content: "";
+        position: absolute;
+        display: none;
+    }
+    
+    /* Show the checkmark when checked */
+    .container input:checked ~ .checkmark:after {
+        display: block;
+    }
+    
+    /* Style the checkmark/indicator */
+    .container .checkmark:after {
+        left: 4px;
+        width: 5px;
+        height: 10px;
+        border: solid white;
+        border-width: 0 3px 3px 0;
+        -webkit-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+        transform: rotate(45deg);
+    }
+}
+.export-status{
+    background: #fafafa;
+    border: 1px solid #c7c7c7;
+    display: inline-block;
+    list-style: none;
+    padding: 5px 10px;
+    border-radius: 4px;
+    li{
+        display: inline;
+        vertical-align: middle;
+        margin-right: 5px;
+        .container{
+            display: inline;
+            font-size: 13px;
+            border-right: 1px solid #8f8d8d;
+            padding-right: 10px;
+        }
+    }
+}
+
+
+// DATE PICKER COLOR THEMES
+.theme-orange .vdatetime-popup__header,
+.theme-orange .vdatetime-calendar__month__day--selected > span > span,
+.theme-orange .vdatetime-calendar__month__day--selected:hover > span > span {
+  background: #9c27b0;
+}
+
+.theme-orange .vdatetime-year-picker__item--selected,
+.theme-orange .vdatetime-time-picker__item--selected,
+.theme-orange .vdatetime-popup__actions__button {
+  color: #9c27b0;
+}
+
+.upload-wrapper{
+    position: relative;
+    width: 150px;
+    text-align: center;
+    .label{
+        position: relative;
+        z-index: 0;
+        display: inline-block;
+        width: 100%;
+        padding: 12px 15px;
+        @include border-radius(4px);
+        border: none;
+        outline: none;
+        background: $primary-color;
+        cursor: pointer;
+        color: #ffffff;
+        font-size: 14px;
+        font-weight: 500;
+    }
+    .upload-box{
+        display: inline-block;
+        position: absolute;
+        z-index: 1;
+        width: 100%;
+        height: 50px;
+        top: 0;
+        left: 0;
+        opacity: 0;
+        cursor: pointer;
+    }
+}
+
+
+// max-width media screen
+// 767 px
+@media screen and ($width-max : $target-width-mobileDevice) {
+
+/* inner page input css start ***/
+.form-field-wrapper-inner{
+    margin-bottom: 8px;
+    .form-field-label{
+        padding-bottom: 5px;
+        @include label-font-size(13);
+    }
+    .input-field{
+        width: 100%;
+        .q-field__control{
+            height: 40px;
+            .q-field__marginal{
+                font-size: 18px;
+                height: 40px;
+            }
+            
+        }
+    }
+    .form-group__error{
+        @include label-font-size(10);
+    }
+}
+/* inner page input css end ***/
+
+}
+// 640 px
+@media screen and ($width-max : $target-width-galaxyNote3Landscape) {
+
+}
+// 568 px
+@media screen and ($width-max : $target-width-iphone5Landscape) {
+
+}
+// 480 px
+@media screen and ($width-max : $target-width-iphoneLandscape) {
+
+}
+// 414 px
+@media screen and ($width-max : $target-width-iphonePlus) {
+
+}
+// 375 px
+@media screen and ($width-max : $target-width-iphone678) {
+
+}
+// 360 px
+@media screen and ($width-max : $target-width-galaxyNote3) {
+
+}
+// 320 px
+@media screen and ($width-max : $target-width-iphone) {
+
+
+}
+
+// min-width media screen
+// 768 px
+@media screen and ($width-min : $target-width-ipad) {
+
+/* inner page input css start ***/
+.form-field-wrapper-inner{
+    margin-bottom: 8px;
+    .form-field-label{
+        padding-bottom: 5px;
+        @include label-font-size(13);
+    }
+    .input-field{
+        width: 100%;
+        .q-field__control{
+            height: 40px;
+            .q-field__marginal{
+                font-size: 18px;
+                height: 40px;
+            }
+            
+        }
+    }
+    .form-group__error{
+        @include label-font-size(10);
+    }
+}
+/* inner page input css end ***/
+
+}
+// 1024 px
+@media screen and ($width-min : $target-width-ipadLandscape) {
+
+/* inner page input css start ***/
+.form-field-wrapper-inner{
+    margin-bottom: 23px;
+    .form-field-label{
+        padding-bottom: 0px;
+        @include label-font-size(14);
+    }
+    .input-field{
+        .q-field__control{
+            .q-field__marginal{
+                font-size: 20px;
+            }
+            
+        }
+    }
+    .form-group__error{
+        @include label-font-size(12);
+    }
+}
+/* inner page input css end ***/
+    
+}
+// 1200 px
+@media screen and ($width-min :$target-width-laptopMDPI) {
+
+
+}
+// 1366 px
+@media screen and ($width-min :$target-width-laptopHDX) {
+
+}
+// 1440 px
+@media screen and ($width-min :$target-width-laptopHDPI) {
+
+}
+// 1600 px
+@media screen and ($width-min :$target-width-desktopMIDPI) {
+
+
+}
+// 1920 px
+@media screen and ($width-min :$target-width-desktopHIDPI) {
+
+}
+

@@ -1,0 +1,23 @@
+// Break-points
+$width-max: max-device-width;
+$width-min: min-device-width;
+
+// max-width
+$target-width-iphone: 320px;
+$target-width-galaxyNote3: 360px;
+$target-width-iphone678: 375px;
+$target-width-iphonePlus: 414px;
+$target-width-iphoneLandscape: 480px;
+$target-width-iphone5Landscape: 568px;
+$target-width-galaxyNote3Landscape: 640px;
+$target-width-mobileDevice: 767px;
+$target-width-menuDevice: 1199px;
+
+// min-width
+$target-width-ipad: 768px;
+$target-width-ipadLandscape: 992px;
+$target-width-laptopMDPI: 1200px;
+$target-width-laptopHDX: 1366px;
+$target-width-laptopHDPI: 1440px;
+$target-width-desktopMIDPI: 1600px;
+$target-width-desktopHIDPI: 1920px;

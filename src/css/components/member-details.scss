@@ -1,0 +1,80 @@
+// max-width media screen
+// 767 px
+@media screen and ($width-max : $target-width-mobileDevice) {
+    .view-card-content .details-view .row > .col-sm-12 {
+        width: 100%;
+      }
+      
+      .view-reg-page .row > .col-sm-12 {
+          height: auto;
+          width: 100%;
+      }
+}
+// 640 px
+@media screen and ($width-max : $target-width-galaxyNote3Landscape) {
+
+}
+// 568 px
+@media screen and ($width-max : $target-width-iphone5Landscape) {
+
+}
+// 480 px
+@media screen and ($width-max : $target-width-iphoneLandscape) {
+
+}
+// 414 px
+@media screen and ($width-max : $target-width-iphonePlus) {
+
+}
+// 375 px
+@media screen and ($width-max : $target-width-iphone678) {
+
+}
+// 360 px
+@media screen and ($width-max : $target-width-galaxyNote3) {
+
+}
+// 320 px
+@media screen and ($width-max : $target-width-iphone) {
+
+
+}
+
+// min-width media screen
+// 768 px
+@media screen and ($width-min : $target-width-ipad) {
+    // .view-card-content .details-view .row > .col-sm-12 {
+    //     width: 30%;
+    //   }
+      
+    //   .view-reg-page .row > .col-sm-12 {
+    //       height: auto;
+    //       width: 70%;
+    //   }
+
+}
+// 1024 px
+@media screen and ($width-min : $target-width-ipadLandscape) {
+
+    
+}
+// 1200 px
+@media screen and ($width-min :$target-width-laptopMDPI) {
+
+}
+// 1366 px
+@media screen and ($width-min :$target-width-laptopHDX) {
+
+}
+// 1440 px
+@media screen and ($width-min :$target-width-laptopHDPI) {
+
+}
+// 1600 px
+@media screen and ($width-min :$target-width-desktopMIDPI) {
+
+}
+// 1920 px
+@media screen and ($width-min :$target-width-desktopHIDPI) {
+
+}

@@ -1,0 +1,546 @@
+
+.card-title{
+    margin: 0 0 20px 0;
+    h4{
+        margin: 0;
+        display: inline-block;
+        @include label-font-size(15);
+        color: $primary-color;
+        line-height: 20px;
+        font-weight: 500;
+    }
+}
+.card-design{
+    margin-bottom: 30px;
+    padding: 30px;
+    background: #ffffff;
+    width: 100%;
+    @include border-radius(4px);
+    @include  box-shadow( 0px, 1px, 17px,rgba(0,0,0,0.08));
+}
+.photo-card{
+    position: relative;
+    .avatar-upload{
+        position: absolute;
+        right: 30px;
+        top: 30px;
+    }
+    .profile-image-big{
+        position: absolute;
+        top: 10px;
+        right: 10px;
+    }
+    .profile-image-big img{
+        width: 125px;
+        height: 125px;
+        border-radius: 150px;
+    }
+}
+.image-uploader{
+  width: 114px;
+    height: 118px;
+    border-radius: 50%;
+    position: absolute;
+    top: 4px;
+    left: 6px;
+    z-index: 6;
+    opacity: 0;
+}
+
+// status card
+.status-card {
+    .status-text{
+        h5{
+            display: inline-block;
+            margin: 0;
+            color: $primary-color;
+            @include label-font-size(16);
+            font-weight: 500;
+            vertical-align: middle;
+            line-height: 40px;
+        }
+    }
+    .toggle-button{
+      float: right;
+    }
+}
+
+// details-view
+.details-view{
+    display: block;
+    margin-bottom: 30px;
+    .left-label{
+        color: $text-secondary-color;
+        @include label-font-size(16);
+        font-weight: 500;
+    }
+    .right-content{
+        display: inline-block;
+        color: $text-primary-color;
+        @include label-font-size(16);
+        font-weight: 400;
+        word-wrap: break-word;
+        line-height: 20px;
+    }
+}
+.check-box{
+    margin-bottom: 10px;
+    @include label-font-size(14);
+}
+
+.tags {
+    list-style: none;
+    margin: 0;
+    overflow: hidden;
+    padding: 0;
+  }
+
+  .tags li:before {
+    content: "";
+    float: left;
+    width: 14px;
+    height: 14px;
+    display: inline-block;
+    border-radius: 3px;
+    background: $primary-color;
+    vertical-align: center;
+    margin: 2px 8px 0 0;
+  }
+  .tags li{
+    vertical-align: center;
+    margin-right: 30px;
+    margin-bottom: 10px;
+  }
+
+//   avater image upload
+.avatar-upload {
+    position: relative;
+    max-width: 125px;
+  }
+  .avatar-upload .avatar-edit {
+    position: absolute;
+    right: 0px;
+    z-index: 1;
+    top: 10px;
+  }
+  .avatar-upload .avatar-edit input {
+    display: none;
+  }
+  .avatar-upload .avatar-edit input + label {
+    display: inline-block;
+    width: 34px;
+    height: 34px;
+    margin-bottom: 0;
+    border-radius: 100%;
+    background: #67389a;
+    text-align: center;
+    border: 1px solid transparent;
+    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.12);
+    cursor: pointer;
+    font-weight: normal;
+    transition: all 0.2s ease-in-out;
+  }
+  .avatar-upload .avatar-edit input + label:hover {
+    background: #67389a;
+    border-color: #67389a;
+  }
+
+  .avatar-upload .avatar-edit input + label:after {
+    content: "\f100";
+    font-family: "Flaticon-1";
+    color: #ffffff;
+    line-height: 34px;
+    text-align: center;
+    margin: auto;
+  }
+  .avatar-upload .avatar-preview {
+    width: 120px;
+    height: 120px;
+    position: relative;
+    border-radius: 100%;
+    border: 3px solid rgb(28, 219, 114);
+    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.1);
+  }
+  .avatar-upload .avatar-preview img {
+    width: 100%;
+    height: 100%;
+    border-radius: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+  }
+  .upload-icon{
+    width: 50px;
+    height: 50px;
+    background-color: rgb(28, 219, 114);
+    text-align: center;
+    line-height: 50px;
+    border-radius: 50%;
+    position: absolute;
+    top: 32px;
+    left: 32px;
+  }
+  .upload-icon i{
+    color: white;
+    font-size: 27px;
+  }
+  .edit-icon{
+    width: 35px;
+    height: 35px;
+    background-color: rgb(28, 219, 114);
+    text-align: center;
+    line-height: 35px;
+    border-radius: 50%;
+    position: absolute;
+    top: 79px;
+    left: 77px;
+  }
+  .edit-icon i{
+    font-size: 20px;
+    color:#ffffff ;
+  }
+  .specality-list{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    li{
+      display: inline-block;
+      margin-bottom: 5px;
+    }
+  }
+
+  .no-data{
+    text-align: center;
+    img{
+      width: 200px;
+      height: 165px;
+    }
+    p{
+      @include label-font-size(20);
+      font-weight: 500;
+      color: $secondary-color;
+    }
+  }
+
+  .tag-design{
+    margin: 0;
+    padding: 0;
+    li{
+      display: inline-block;
+      padding: 5px 10px;
+      margin-right: 10px;
+      margin-bottom: 5px;
+      list-style: none;
+      background: $inner-bg;
+      @include label-font-size(16);
+      @include border-all(2px, solid, $secondary-color);
+      @include border-radius(50px);
+    }
+  }
+
+  .select-list-date{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    li{
+      cursor: pointer;
+      width: 33.333%;
+      display: inline-block;
+      text-align: center;
+      padding: 12px 0px;
+      background: #F6F6F6;
+      @include label-font-size(15);
+      @include border-all(1px, solid, #e3e1e1);
+    }
+    .active {
+      color: #ffffff;
+      background: #00b894;
+      @include border-all(2px, solid, #00b894);
+    }
+  }
+
+
+
+
+// max-width media screen
+// 767 px
+@media screen and ($width-max : $target-width-mobileDevice) {
+.card-design{
+    padding: 15px;
+    margin-bottom: 20px;
+}
+.card-title{
+    margin: 0 0 20px 0;
+    h4{
+      @include label-font-size(15);
+    }
+}
+.status-card {
+    .status-text{
+        h5{
+            @include label-font-size(14);
+        }
+    }
+    .toggle-button{
+      float: left;
+    }
+}
+.details-view{
+    margin-bottom: 10px !important;
+    .left-label{
+        @include label-font-size(14);
+    }
+    .right-content{
+        @include label-font-size(14);
+    }
+}
+//   avater image upload
+.phone-image {
+    position: relative;
+    max-width: 100px;
+  }
+  .phone-image .avatar-edit {
+    position: absolute;
+    right: 0px;
+    z-index: 1;
+    top: 10px;
+  }
+  .phone-image .avatar-edit input {
+    display: none;
+  }
+  .phone-image .avatar-edit input + label {
+    display: inline-block;
+    width: 34px;
+    height: 34px;
+    margin-bottom: 0;
+    border-radius: 100%;
+    background: #67389a;
+    text-align: center;
+    border: 1px solid transparent;
+    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.12);
+    cursor: pointer;
+    font-weight: normal;
+    transition: all 0.2s ease-in-out;
+  }
+  .phone-image .avatar-edit input + label:hover {
+    background: #67389a;
+    border-color: #67389a;
+  }
+
+  .phone-image .avatar-edit input + label:after {
+    content: "\f100";
+    font-family: "Flaticon-1";
+    color: #ffffff;
+    line-height: 34px;
+    text-align: center;
+    margin: auto;
+  }
+  .phone-image .avatar-preview {
+    width: 100px;
+    height: 100px;
+    position: relative;
+    border-radius: 100%;
+    border: 6px solid rgb(233, 231, 231);
+    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.1);
+  }
+  .phone-image .avatar-preview img {
+    width: 100%;
+    height: 100%;
+    border-radius: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  .photo-card{
+    position: relative;
+    .avatar-upload{
+        position: absolute;
+        right: 30px;
+        top: 30px;
+    }
+    .profile-image-big{
+        position: absolute;
+        top: 10px;
+        right: 10px;
+    }
+    .profile-image-big img{
+        width: 100px;
+        height: 100px;
+        border-radius: 150px;
+    }
+}
+}
+// max-width media screen
+// 767 px
+@media screen and ($width-max : $target-width-mobileDevice) {
+
+  
+
+}
+
+// 640 px
+@media screen and ($width-max : $target-width-galaxyNote3Landscape) {
+
+}
+// 568 px
+@media screen and ($width-max : $target-width-iphone5Landscape) {
+
+}
+// 480 px
+@media screen and ($width-max : $target-width-iphoneLandscape) {
+
+}
+// 414 px
+@media screen and ($width-max : $target-width-iphonePlus) {
+
+}
+// 375 px
+@media screen and ($width-max : $target-width-iphone678) {
+
+}
+// 360 px
+@media screen and ($width-max : $target-width-galaxyNote3) {
+
+}
+// 320 px
+@media screen and ($width-max : $target-width-iphone) {
+
+
+}
+
+// min-width media screen
+// 768 px
+@media screen and ($width-min : $target-width-ipad) {
+.card-design{
+    padding: 20px;
+    margin-bottom: 20px;
+
+
+}
+.card-title{
+    margin: 0 0 20px 0;
+    h4{
+      @include label-font-size(15);
+    }
+}
+.details-view{
+    margin-bottom: 15px;
+    .left-label{
+        @include label-font-size(14);
+    }
+    .right-content{
+        @include label-font-size(14);
+    }
+}
+//   avater image upload
+.phone-image {
+    position: relative;
+    max-width: 100px;
+  }
+  .phone-image .avatar-edit {
+    position: absolute;
+    right: 0px;
+    z-index: 1;
+    top: 10px;
+  }
+  .phone-image .avatar-edit input {
+    display: none;
+  }
+  .phone-image .avatar-edit input + label {
+    display: inline-block;
+    width: 34px;
+    height: 34px;
+    margin-bottom: 0;
+    border-radius: 100%;
+    background: #67389a;
+    text-align: center;
+    border: 1px solid transparent;
+    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.12);
+    cursor: pointer;
+    font-weight: normal;
+    transition: all 0.2s ease-in-out;
+  }
+  .phone-image .avatar-edit input + label:hover {
+    background: #67389a;
+    border-color: #67389a;
+  }
+
+  .phone-image .avatar-edit input + label:after {
+    content: "\f100";
+    font-family: "Flaticon-1";
+    color: #ffffff;
+    line-height: 34px;
+    text-align: center;
+    margin: auto;
+  }
+  .phone-image .avatar-preview {
+    width: 100px;
+    height: 100px;
+    position: relative;
+    border-radius: 100%;
+    border: 6px solid rgb(233, 231, 231);
+    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.1);
+  }
+  .phone-image .avatar-preview img {
+    width: 100%;
+    height: 100%;
+    border-radius: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+}
+// 1024 px
+@media screen and ($width-min : $target-width-ipadLandscape) {
+
+
+}
+// 1200 px
+@media screen and ($width-min :$target-width-laptopMDPI) {
+.card-title{
+    margin: 0 0 20px 0;
+    h4{
+      @include label-font-size(15);
+    }
+}
+}
+// 1366 px
+@media screen and ($width-min :$target-width-laptopHDX) {
+
+}
+// 1440 px
+@media screen and ($width-min :$target-width-laptopHDPI) {
+
+}
+// 1600 px
+@media screen and ($width-min :$target-width-desktopMIDPI) {
+
+}
+// 1920 px
+@media screen and ($width-min :$target-width-desktopHIDPI) {
+
+.card-design{
+    padding: 30px;
+    margin-bottom: 30px;
+}
+.card-title{
+    margin: 0 0 20px 0;
+    h4{
+      @include label-font-size(15);
+    }
+}
+// details-view
+.details-view{
+    margin-bottom: 30px;
+    .left-label{
+        @include label-font-size(16);
+    }
+    .right-content{
+        @include label-font-size(16);
+        line-height: 20px;
+    }
+}
+
+}

@@ -1,0 +1,55 @@
+// mixins box-shadow
+@mixin box-shadow($top, $left, $blur, $color) {
+  -webkit-box-shadow: $top $left $blur $color;
+  -moz-box-shadow: $top $left $blur $color;
+  box-shadow: $top $left $blur $color;
+}
+
+// mixins border-radius
+@mixin border-radius($radius) {
+  border-radius: $radius;
+  -webkit-border-radius: $radius;
+  -moz-border-radius: $radius;
+}
+
+// mixins label font-size
+@mixin label-font-size($sizeValue) {
+  font-size: ($sizeValue) + px;
+}
+
+// mixins label font-size
+@mixin head-font-size($sizeValue) {
+  font-size: ($sizeValue) + px;
+}
+
+// mixins para font-size
+@mixin para-font-size($sizeValue) {
+  font-size: ($sizeValue) + px;
+}
+
+// mixins border-radius all
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+  border-radius: $radius;
+}
+
+// mixins border all
+@mixin border-all($width, $style, $color) {
+  border-width: $width;
+  border-style: $style;
+  border-color: $color;
+}
+
+/* @include transition(all,2s,ease-out); */
+@mixin transition($what: all, $time: 0.2s, $how: ease-in-out) {
+  -webkit-transition: $what $time $how;
+  -moz-transition: $what $time $how;
+  -ms-transition: $what $time $how;
+  -o-transition: $what $time $how;
+  transition: $what $time $how;
+}
+
+// mixins label font-size
+@mixin side-menu-font-size($sizeValue) {
+  font-size: ($sizeValue) + px;
+}

@@ -1,0 +1,373 @@
+.q-layout {
+  width: 100%;
+  height: 100%;
+}
+.login-page {
+  background-image: url("../assets/images/adrian-infernus-GLf7bAwCdYg-unsplash.jpg");
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  z-index: 1;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.login-page {
+  .q-page {
+    width: 100%;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+  }
+  .login-body {
+    width: 30%;
+  }
+  .new-register {
+    width: 60%;
+  }
+}
+
+.login {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 0px;
+}
+
+.logo-area {
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 15px;
+  img {
+    width: 130px;
+    height: 140px;
+    border-radius: 50%;
+  }
+}
+.login-page {
+  .add-language {
+    position: absolute;
+    top: 20px;
+    right: 50px;
+    z-index: 99;
+    .input-field {
+      .q-field__control {
+        // @include border-radius(4px);
+        min-height: 40px;
+        background: #efecff;
+        &:before {
+          // @include border-all(1px, solid, #c7c7c7);
+        }
+        &:after {
+          // @include border-all(1px, solid, #c7c7c7);
+        }
+        .q-field__marginal {
+          font-size: 20px;
+          height: 40px;
+        }
+      }
+      .q-field--auto-height,
+      .q-field__native {
+        min-height: 0;
+      }
+    }
+    .q-field--focused {
+      .q-field__control {
+        &:after {
+          // @include border-all(1px, solid, #c7c7c7);
+        }
+      }
+    }
+    .q-field--with-bottom {
+      padding-bottom: 0;
+    }
+  }
+  .language-btn {
+    text-transform: none !important;
+  }
+}
+
+.login-input {
+  .login-status {
+    margin-top: 10px;
+    margin-bottom: 20px;
+    text-align: center;
+    h2 {
+      margin: 0;
+      color: black;
+      // @include head-font-size(18);
+      font-weight: 600;
+      line-height: 24px;
+      margin-bottom: 7px;
+    }
+    p {
+      margin: 0;
+      color: black;
+      // @include para-font-size(14);
+      line-height: 20px;
+      margin-top: 3px;
+      font-weight: 500;
+      margin-bottom: 50px;
+      padding: 0 30px;
+    }
+  }
+  .new {
+    width: 70%;
+    margin: 0 auto;
+  }
+}
+
+.login-input {
+  .reprocess {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    .rember {
+      flex: 1;
+      .q-checkbox__bg {
+        left: 0;
+      }
+      .q-checkbox__label {
+        color: $text-secondary-color;
+        // @include label-font-size(13);
+      }
+      .q-checkbox__inner {
+        &:before {
+          opacity: 0;
+        }
+      }
+    }
+    .forgot {
+      display: flex;
+      align-items: center;
+      a {
+        color: $primary-color;
+        // @include label-font-size(13);
+        font-weight: 600;
+        &:hover {
+          text-decoration: underline;
+          color: $primary-color;
+        }
+      }
+    }
+  }
+}
+
+.login-input {
+  .button-area {
+    margin: 15px 0;
+  }
+}
+
+.login-input {
+  .new-account {
+    text-align: center;
+    margin-top: 15px;
+    p {
+      color: $text-primary-color;
+      // @include label-font-size(13);
+      line-height: 20px;
+      a {
+        color: $primary-color;
+        // @include label-font-size(13);
+        font-weight: 600;
+        &:hover {
+          text-decoration: underline;
+          color: $primary-color;
+        }
+      }
+    }
+  }
+}
+
+.login {
+  .term-area {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    p {
+      margin: 0;
+      color: $text-secondary-color;
+      // @include label-font-size(14);
+      font-weight: 500;
+    }
+  }
+}
+.select-role {
+  margin-bottom: 20px;
+  li {
+    list-style: none;
+    display: inline-block;
+    margin-right: 20px;
+    &:first-child {
+      color: $text-secondary-color;
+      // @include label-font-size(16);
+    }
+  }
+}
+.agree {
+  .q-option-label {
+    color: $text-secondary-color;
+    // @include label-font-size(16);
+  }
+}
+
+.footer-l {
+  text-align: center;
+  margin-top: 10px;
+  color: #fff;
+  font-size: 12px;
+  a {
+    color: #d7d6da;
+    // @include label-font-size(13);
+    font-weight: 600;
+    &:hover {
+      text-decoration: underline;
+      color: $primary-color;
+    }
+  }
+}
+.error-msg {
+  color: red;
+  font-size: 15px;
+  font-weight: 500;
+}
+
+// max-width media screen
+// 767 px
+@media screen and ($width-max: $target-width-mobileDevice) {
+  .login-page {
+    background-image: url("/assets/bjp-app-logo.png");
+    min-height: 100%;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+  .login-page {
+    .q-layout-padding {
+      justify-content: flex-start;
+      align-items: flex-start;
+    }
+    .login-body {
+      width: 100%;
+    }
+  }
+
+  .login {
+    border-radius: 0px;
+  }
+  .login-input {
+    .login-status {
+      h2 {
+        // @include head-font-size(20);
+      }
+      p {
+        // @include para-font-size(12);
+      }
+    }
+  }
+}
+
+.login-input .reprocess .rember {
+  flex: 1;
+  width: 50%;
+  float: left;
+}
+
+.login-input .reprocess .forgot {
+  width: 50%;
+  display: inline-block;
+  text-align: right;
+}
+
+// 640 px
+@media screen and ($width-max: $target-width-galaxyNote3Landscape) {
+}
+// 568 px
+@media screen and ($width-max: $target-width-iphone5Landscape) {
+}
+// 480 px
+@media screen and ($width-max: $target-width-iphoneLandscape) {
+}
+// 414 px
+@media screen and ($width-max: $target-width-iphonePlus) {
+}
+// 375 px
+@media screen and ($width-max: $target-width-iphone678) {
+}
+// 360 px
+@media screen and ($width-max: $target-width-galaxyNote3) {
+}
+// 320 px
+@media screen and ($width-max: $target-width-iphone) {
+}
+
+// min-width media screen
+// 768 px
+@media screen and ($width-min: $target-width-ipad) {
+  .login-page {
+    .login-body {
+      width: 60%;
+    }
+  }
+}
+// 1024 px
+@media screen and ($width-min: $target-width-ipadLandscape) {
+}
+// 1200 px
+@media screen and ($width-min: $target-width-laptopMDPI) {
+  .login-page {
+    .login-body {
+      width: 50%;
+    }
+    .new-register {
+      width: 50%;
+      .login {
+        padding: 0;
+      }
+    }
+  }
+}
+// 1366 px
+@media screen and ($width-min: $target-width-laptopHDX) {
+}
+// 1440 px
+@media screen and ($width-min: $target-width-laptopHDPI) {
+}
+// 1600 px
+@media screen and ($width-min: $target-width-desktopMIDPI) {
+  .select-role {
+    margin-bottom: 20px;
+    li {
+      margin-right: 20px;
+      &:first-child {
+        // @include label-font-size(16);
+      }
+    }
+  }
+  .agree {
+    .q-option-label {
+      color: $text-secondary-color;
+      // @include label-font-size(14);
+    }
+  }
+
+  .login-page {
+    .login-body {
+      width: 30%;
+    }
+    .new-register {
+      width: 50%;
+      .login {
+        padding: 0;
+      }
+    }
+  }
+}
+// 1920 px
+@media screen and ($width-min: $target-width-desktopHIDPI) {
+}

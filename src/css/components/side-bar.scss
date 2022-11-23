@@ -1,0 +1,107 @@
+.side-menu{
+    .q-item{
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        margin: 0;
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 20px;
+        text-decoration: none;
+        color: #364a63 !important;
+        &:hover{
+            margin: 0!important;
+            border-radius: 0px;
+        }
+    }
+
+    .q-item.q-router-link--active, .q-item--active {
+        color: #364a63 !important;
+    }
+
+    .q-item__section--avatar {
+        min-width: 40px !important;
+    }
+    .q-expansion-item__container{
+        margin: 0px!important;
+        // background-color: #cbd5e1; 
+        .q-item{
+            margin: 0!important;
+        }
+        .q-item__section--side {
+            color: #364a63 !important;
+        }
+
+    }
+}
+
+.side-menu .inner-menu .q-item__section--main.activity {
+    margin-left: 18px !important;
+}
+// max-width media screen
+// 767 px
+@media screen and ($width-max : $target-width-mobileDevice) {
+
+}
+// 640 px
+@media screen and ($width-max : $target-width-galaxyNote3Landscape) {
+
+}
+// 568 px
+@media screen and ($width-max : $target-width-iphone5Landscape) {
+
+}
+// 480 px
+@media screen and ($width-max : $target-width-iphoneLandscape) {
+
+}
+// 414 px
+@media screen and ($width-max : $target-width-iphonePlus) {
+
+}
+// 375 px
+@media screen and ($width-max : $target-width-iphone678) {
+
+}
+// 360 px
+@media screen and ($width-max : $target-width-galaxyNote3) {
+
+}
+// 320 px
+@media screen and ($width-max : $target-width-iphone) {
+
+
+}
+
+// min-width media screen
+// 768 px
+@media screen and ($width-min : $target-width-ipad) {
+
+
+}
+// 1024 px
+@media screen and ($width-min : $target-width-ipadLandscape) {
+
+    
+}
+// 1200 px
+@media screen and ($width-min :$target-width-laptopMDPI) {
+
+}
+// 1366 px
+@media screen and ($width-min :$target-width-laptopHDX) {
+
+}
+// 1440 px
+@media screen and ($width-min :$target-width-laptopHDPI) {
+
+}
+// 1600 px
+@media screen and ($width-min :$target-width-desktopMIDPI) {
+
+}
+// 1920 px
+@media screen and ($width-min :$target-width-desktopHIDPI) {
+
+}

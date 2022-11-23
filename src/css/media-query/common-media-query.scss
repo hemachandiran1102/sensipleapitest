@@ -1,0 +1,124 @@
+
+// max-width media screen
+// 767 px
+@media screen and ($width-max : $target-width-mobileDevice) {
+    .reg-label{
+        width: 100%!important;
+        float: none!important;
+    }
+    .reg-form .reg-input {
+        width: 100%!important;
+        display: block!important;
+    }
+    .reg-login-input{
+        padding-top: 55px!important;
+    }
+    .login.reg-login {
+     padding:20px !important;; 
+    }
+
+    
+}
+// 640 px
+@media screen and ($width-max : $target-width-galaxyNote3Landscape) {
+    .view-card-content .details-view .row > .col-sm-12 {
+        width: 50%;
+      }
+      
+      .view-reg-page .row > .col-sm-12 {
+          width: 50%;
+      }
+}
+// 568 px
+@media screen and ($width-max : $target-width-iphone5Landscape) {
+
+}
+// 480 px
+@media screen and ($width-max : $target-width-iphoneLandscape) {
+
+}
+// 414 px
+@media screen and ($width-max : $target-width-iphonePlus) {
+
+}
+// 375 px
+@media screen and ($width-max : $target-width-iphone678) {
+    
+}
+// 360 px
+@media screen and ($width-max : $target-width-galaxyNote3) {
+    .login-page .add-language {
+        position: absolute;
+        top: 20px;
+        right: 24px;
+        z-index: 99;
+    }
+
+}
+// 320 px
+@media screen and ($width-max : $target-width-iphone) {
+    .login-page .add-language {
+        position: absolute;
+        top: 12px;
+        right: 6px;
+        z-index: 99;
+    }
+    // .q-field--auto-height.q-field--dense .q-field__control, .q-field--auto-height.q-field--dense .q-field__native {
+    //     min-height: 40px;
+    // }
+
+
+}
+
+// min-width media screen
+// 768 px
+@media screen and ($width-min : $target-width-ipad) {
+    .login-page .add-language {
+        position: absolute;
+        top: 20px;
+        right: 21px;
+        z-index: 99;
+      }
+
+
+}
+// 1024 px
+@media screen and ($width-min : $target-width-ipadLandscape) {
+    .login-body.reg-body{
+        width: 614.4px;
+    }
+
+    
+}
+// 1200 px
+@media screen and ($width-min :$target-width-laptopMDPI) {
+    .reg-form .reg-label{
+        font-size: 14px;
+    }
+    .login-body.reg-body{
+        width: 614.4px;
+    }
+
+}
+// 1366 px
+@media screen and ($width-min :$target-width-laptopHDX) {
+   .login-body.reg-body{
+       width: 614.4px;
+   }
+
+}
+// 1440 px
+@media screen and ($width-min :$target-width-laptopHDPI) {
+
+}
+// 1600 px
+@media screen and ($width-min :$target-width-desktopMIDPI) {
+
+}
+// 1920 px
+@media screen and ($width-min :$target-width-desktopHIDPI) {
+    .reg-form .reg-label{
+        font-size: 14px;
+    }
+
+}
